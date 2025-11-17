@@ -1,0 +1,40 @@
+-- seed_players.sql
+CREATE TABLE IF NOT EXISTS players (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(120) NOT NULL,
+  position VARCHAR(10) NOT NULL,
+  rating INT NOT NULL,
+  price INT NOT NULL
+);
+
+INSERT INTO players (name, position, rating, price) VALUES
+('A. Traoré','FW',81,10000),
+('K. Silva','FW',78,9000),
+('L. Duarte','MF',75,8000),
+('P. Mensah','GK',74,7500),
+('M. Kouamé','DF',72,7000),
+('R. N''Golo','MF',80,10500),
+('D. Fofana','FW',76,8200),
+('S. Okoro','DF',70,6500),
+('E. Kouassi','MF',73,7200),
+('B. Koffi','DF',68,6000),
+('Y. Mensah','GK',77,7800),
+('C. Adom','FW',79,9800),
+('P. Doumbia','MF',71,6800),
+('G. Tano','DF',66,5500),
+('L. Samba','FW',74,7600),
+('M. Zongo','MF',69,6200),
+('F. Yao','DF',67,5900),
+('S. Diabaté','FW',82,11000),
+('N. Koné','MF',70,6400),
+('O. Amani','DF',73,7100),
+('H. Ouedraogo','GK',65,5200),
+('R. Sissoko','FW',76,8200),
+('T. Bah','MF',68,6000),
+('A. Kaba','DF',69,6300),
+('M. Diallo','FW',77,7800),
+('L. Traoré','MF',72,7000),
+('V. Koulibaly','DF',83,11500),
+('E. Soro','FW',71,6600),
+('P. Koomson','MF',74,7400),
+('J. Mensah','DF',70,6500);
